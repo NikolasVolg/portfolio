@@ -123,10 +123,13 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #2f58fe;
+    color: #ededed;
 }
 
 #quiSuiJe p {
     text-align: center;
+    padding: 0 15px 0 15px;
 }
 
 #competences {
@@ -137,7 +140,22 @@ h1 {
 
 .Hard {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #9e9d9d;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    width: 300px;
+    margin: 10px;
+}
+
+.Hard:hover {
+    box-shadow: 0px 8px 8px #9e9d9d;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
 }
 
 .contactList {
