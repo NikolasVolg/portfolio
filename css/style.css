@@ -24,7 +24,7 @@ nav {
 
 #menuToggle {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 15px;
     z-index: 1;
@@ -40,9 +40,8 @@ nav {
     display: block;
     width: 40px;
     height: 32px;
-    position: absolute;
-    top: -10px;
-    left: -7px;
+    position: fixed;
+    top: -5px;
     cursor: pointer;
     opacity: 0;
     z-index: 2;
@@ -85,7 +84,7 @@ nav {
 }
 
 #menu {
-    position: absolute;
+    position: fixed;
     width: 250px;
     top: -20px;
     right: -15px;
@@ -96,6 +95,7 @@ nav {
     transform-origin: 0 0;
     transform: translate(420px);
     transition: transform 0.5s ease-in-out;
+    overflow: hidden;
 }
 
 #menu li {
@@ -114,10 +114,22 @@ main {
     padding-top: 50px;
 }
 
+
+/*--------- TITLE ----------*/
+
 h1 {
     display: flex;
     justify-content: center;
 }
+
+h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*------- SECTION ----------*/
 
 #quiSuiJe {
     display: flex;
@@ -162,4 +174,11 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+/*---------- IMAGES ------------*/
+
+.Icon {
+    display: none;
 }
