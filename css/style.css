@@ -207,19 +207,44 @@ h2 {
     overflow: hidden;
     transform-style: preserve-3d;
     backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.frontFace::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
     background-image: url("../images/CurriculumVitaeBornotNicolas.png");
     background-size: contain;
 }
 
-.frontFace img {
-    width: 200px;
+.frontFace h3 {
+    font-size: 1.5rem;
+    z-index: 2;
 }
 
-.projets1:hover .backFace {
+.frontFace p {
+    font-size: 1.5rem;
+    z-index: 2;
+}
+
+.projets1:hover .backFace,
+.projets1:active .backFace {
     transform: rotateY(0);
 }
 
-.projets1:hover .frontFace {
+.projets1:hover .frontFace,
+.projets1:active .frontFace {
     transform: rotateY(180deg);
 }
 
