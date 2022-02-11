@@ -9,6 +9,8 @@ body {
     box-sizing: border-box;
     font-size: 16px;
     font-family: "Lato-Regular";
+    background-color: #232323;
+    color: aliceblue;
 }
 
 a {
@@ -53,7 +55,7 @@ nav {
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    background: #000;
+    background: #fff;
     border-radius: 3px;
     z-index: 1;
     transform-origin: 4px 0px;
@@ -71,7 +73,7 @@ nav {
 #menuToggle input:checked~span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
+    background: #fff;
 }
 
 #menuToggle input:checked~span:nth-last-child(3) {
@@ -90,7 +92,7 @@ nav {
     right: -15px;
     margin: 0;
     padding: 50px 30px 30px 50px;
-    background: #ededed;
+    background: #d29a4f;
     list-style-type: none;
     transform-origin: 0 0;
     transform: translate(420px);
@@ -135,8 +137,8 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #2f58fe;
-    color: #ededed;
+    background: #d29a4f;
+    color: #000;
 }
 
 #quiSuiJe p {
@@ -170,82 +172,34 @@ h2 {
     justify-content: space-between;
 }
 
-.contactList {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.Soft {
+    text-align: center;
 }
 
 
 /*---------- PROJETS -----------*/
 
-.projets1 {
-    width: 200px;
-    height: 200px;
-    position: relative;
-}
-
-.backFace,
-.frontFace {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: all 0.8s;
-    border: 1px solid #9e9d9d;
-}
-
-.backFace {
-    overflow: hidden;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
-    transform: rotateY(-180deg);
-}
-
-.frontFace {
-    overflow: hidden;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
+article {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    position: relative;
 }
 
-.frontFace::before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.6;
-    background-image: url("../images/CurriculumVitaeBornotNicolas.png");
-    background-size: contain;
+.projet {
+    width: 250px;
+    background-color: antiquewhite;
+    color: #000;
 }
 
-.frontFace h3 {
-    font-size: 1.5rem;
-    z-index: 2;
+.projet h3 {
+    text-align: center;
 }
 
-.frontFace p {
-    font-size: 1.5rem;
-    z-index: 2;
+.projet img {
+    width: 250px;
 }
 
-.projets1:hover .backFace,
-.projets1:active .backFace {
-    transform: rotateY(0);
-}
-
-.projets1:hover .frontFace,
-.projets1:active .frontFace {
-    transform: rotateY(180deg);
+.projet p {
+    padding: 10px;
 }
 
 
@@ -253,4 +207,26 @@ h2 {
 
 .Icon {
     display: none;
+}
+
+
+/*---------- CONTACT -----------*/
+
+.contactList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactList a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*---------- FOOTER ------------*/
+
+footer {
+    height: 100px;
+    background-color: #d29a4f;
 }
