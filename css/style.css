@@ -7,10 +7,9 @@ body {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
     font-family: "Lato-Regular";
     background-color: #232323;
-    color: aliceblue;
+    color: #fff;
 }
 
 a {
@@ -76,7 +75,7 @@ nav {
     background: #fff;
 }
 
-#menuToggle input:checked~span:nth-last-child(3) {
+#menuToggle input:checked~span:n3pxth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
@@ -113,7 +112,7 @@ nav {
 /* -------------- */
 
 main {
-    padding-top: 50px;
+    padding-top: 10%;
 }
 
 
@@ -157,10 +156,10 @@ h2 {
     flex-direction: column;
     align-items: center;
     border: 1px solid #9e9d9d;
-    border-radius: 10px;
+    border-radius: 1rem;
     transition: all 0.5s ease-in-out;
-    width: 300px;
-    margin: 10px;
+    width: 90%;
+    margin: 1em;
 }
 
 .Hard:hover {
@@ -182,12 +181,14 @@ h2 {
 article {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .projet {
-    width: 250px;
+    width: 80%;
     background-color: antiquewhite;
     color: #000;
+    border-radius: .3rem;
 }
 
 .projet h3 {
@@ -195,11 +196,23 @@ article {
 }
 
 .projet img {
-    width: 250px;
+    width: 100%;
 }
 
 .projet p {
-    padding: 10px;
+    padding: .5em;
+}
+
+.link {
+    margin: 0 .5em 1em;
+    padding: 3px;
+    text-align: right;
+}
+
+.link a {
+    border: 1px solid #000;
+    color: #000;
+    padding: .5em 1.5em;
 }
 
 
@@ -227,6 +240,7 @@ article {
 /*---------- FOOTER ------------*/
 
 footer {
-    height: 100px;
+    margin-top: 3em;
+    padding-top: 0.5em;
     background-color: #d29a4f;
 }
