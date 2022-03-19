@@ -75,7 +75,7 @@ nav {
     background: #fff;
 }
 
-#menuToggle input:checked~span:n3pxth-last-child(3) {
+#menuToggle input:checked~span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
