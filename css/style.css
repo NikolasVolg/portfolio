@@ -182,6 +182,7 @@ article {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    height: 100%;
 }
 
 .projet {
@@ -200,13 +201,12 @@ article {
 }
 
 .projet p {
-    padding: .5em;
+    padding: 0 .5em 0 .5em;
 }
 
 .link {
-    margin: 0 .5em 1em;
-    padding: 3px;
     text-align: right;
+    margin: 1.5em 1em;
 }
 
 .link a {
@@ -243,4 +243,16 @@ footer {
     margin-top: 3em;
     padding-top: 0.5em;
     background-color: #d29a4f;
+}
+
+@media screen and (min-width: 768px) {
+    /* PROJET */
+    .truc {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    article {
+        max-width: 300px;
+    }
 }
