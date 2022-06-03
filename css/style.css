@@ -268,10 +268,12 @@ article {
 .accordeon .content {
     overflow-y: hidden;
     height: 0;
+    transition: transform 0.5s ease-in-out;
 }
 
 .accordeon>input:checked~.content {
     height: auto;
+    transform: translateY();
     overflow: visible;
 }
 
@@ -321,11 +323,11 @@ article {
     position: absolute;
     top: 38.8%;
     left: 89.3%;
-    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in-out;
 }
 
-.accordeon>input:checked~span:last-child {
-    transform: rotate(90deg);
+.accordeon>input:checked~p>label>span:last-child {
+    transform: rotate(-90deg);
 }
 
 
