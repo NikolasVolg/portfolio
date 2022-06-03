@@ -174,7 +174,7 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #9e9d9d;
+    border: 1px solid #d29a4f;
     border-radius: 1rem;
     transition: all 0.5s ease-in-out;
     margin: 1em;
@@ -182,7 +182,7 @@ h4 {
 }
 
 .Hard:hover {
-    box-shadow: 0px 8px 8px #9e9d9d;
+    box-shadow: 0px 5px 15px #d29a4f;
     scale: 1.02;
 }
 
@@ -211,7 +211,6 @@ h4 {
 }
 
 .Soft p:nth-child(2) {
-    transform: scale(1);
     transition: transform 1s ease-in-out;
 }
 
@@ -258,35 +257,75 @@ article {
     width: 100%;
 }
 
-.projet p {
-    padding: 0 .5em 0 .5em;
+
+/* collapse text */
+
+.accordeon>input {
+    position: absolute;
+    left: -100vw;
 }
 
+.accordeon .content {
+    overflow-y: hidden;
+    height: 0;
+}
 
-/* collapsible */
+.accordeon>input:checked~.content {
+    height: auto;
+    overflow: visible;
+}
 
-.collapsible {
-    background-color: #eee;
-    color: #444;
+.accordeon label {
+    display: block;
+    position: relative;
+}
+
+.accordeon {
+    margin-bottom: 1em;
+}
+
+.accordeon>input:checked~.content {
+    padding: 0px 15px 0px 15px;
+    border: 1px solid #e8e8e8;
+    border-top: 0;
+}
+
+.accordeon label {
+    color: #333;
     cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 16px;
+    font-weight: normal;
+    padding: 15px;
+    background: #e8e8e8;
 }
 
-.active,
-.collapsible:hover {
-    background-color: #ccc;
+.accordeon label:hover,
+.accordeon label:focus {
+    background: #d8d8d8;
 }
 
-.content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
+.accordeon label span:first-child {
+    width: 15px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #232323;
+    position: absolute;
+    top: 50%;
+    left: 87.3%;
+}
+
+.accordeon label span:last-child {
+    width: 3px;
+    height: 15px;
+    border-radius: 5px;
+    background-color: #232323;
+    position: absolute;
+    top: 38.8%;
+    left: 89.3%;
+    transition: transform 0.5s ease-in;
+}
+
+.accordeon>input:checked~span:last-child {
+    transform: rotate(90deg);
 }
 
 
