@@ -14,7 +14,16 @@
 <body>
 
     <header>
-        <nav role="navigation">
+        <nav role="navigation" class="NavDesktop">
+            <ul>
+                <li><a href="#aPropos">A propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#realisations">Réalisations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav role="navigation" class="NavMobil">
             <div id="menuToggle">
                 <label for="menuToggle">
                     <input type="checkbox" id="menuToggle" name="Menu">
@@ -24,7 +33,7 @@
                     <span></span>
 
                     <ul id="menu">
-                        <li><a href="#quiSuiJe">Qui suis-je ?</a></li>
+                        <li><a href="#aPropos">A propos</a></li>
                         <li><a href="#competences">Compétences</a></li>
                         <li><a href="#realisations">Réalisations</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -38,7 +47,7 @@
 
         <h1>Développeur Web</h1>
 
-        <section id="quiSuiJe">
+        <section id="aPropos">
             <div class="apropos">
                 <img src="./images/Me.jpg" alt="" class="Me">
                 <h2>A propos</h2>
@@ -121,13 +130,13 @@
                         <img src="./images/Projet_2.jpg" alt="">
 
                         <div class="accordeon">
-                            <input type="checkbox" name="collapse" id="handle1">
-                            <p>
-                                <label for="handle1">Voir détails 
-                                <span></span>
-                                <span></span>
-                                </label>
-                            </p>
+                            <input type="checkbox" name="Détails" id="handle1">
+
+                            <label for="handle1">Voir détails 
+                                <img src="./images/plus-solid.svg" alt="" class="Plus">
+                                <img src="./images/minus-solid.svg" alt="" class="Moins">
+                            </label>
+
                             <div class="content">
                                 <p>Reproduire un CV à partir d'une maquette donnée (format desktop) et le rendre responsive. Liberté était donnée sur le choix des couleurs et des icônes.</p>
                             </div>
@@ -149,13 +158,13 @@
                         <img src="./images/projet_3.jpg" alt="">
 
                         <div class="accordeon">
-                            <input type="checkbox" name="collapse" id="handle2">
-                            <p>
-                                <label for="handle2">Voir détails 
-                                <span></span>
-                                <span></span>
-                                </label>
-                            </p>
+                            <input type="checkbox" name="Détails" id="handle2">
+
+                            <label for="handle2">Voir détails 
+                                <img src="./images/plus-solid.svg" alt="" class="Plus">
+                                <img src="./images/minus-solid.svg" alt="" class="Moins">
+                            </label>
+
                             <div class="content">
                                 <p>Produire le site MVP avec animation en CSS pour "OhMyFood", à partir d'une maquette donnée (format desktop), à adapter au format mobile et tablette</p>
                             </div>
@@ -176,13 +185,13 @@
                         <img src="./images/projet_4.jpg" alt="">
 
                         <div class="accordeon">
-                            <input type="checkbox" name="collapse" id="handle3">
-                            <p>
-                                <label for="handle3">Voir détails 
-                                <span></span>
-                                <span></span>
-                                </label>
-                            </p>
+                            <input type="checkbox" name="Détails" id="handle3">
+
+                            <label for="handle3">Voir détails 
+                                <img src="./images/plus-solid.svg" alt="" class="Plus">
+                                <img src="./images/minus-solid.svg" alt="" class="Moins">
+                            </label>
+
                             <div class="content">
                                 <p>Analyse de l’état actuel de SEO du site fourni. Ajouter la bonne pratique à mettre en place pour chaque partie du site qui n’est pas optimisée, en citant les sources. Amélioration du SEO du site. Ensuite, optimiser le site
                                     en appliquant les 10 recommandations à son contenu et à son code source. Puis fournir un rapport d'optimisation ainsi qu'un rapport de comparaison pour les 10 recomandations.</p>
@@ -204,13 +213,13 @@
                         <img src="./images/projet_5.jpg" alt="">
 
                         <div class="accordeon">
-                            <input type="checkbox" name="collapse" id="handle4">
-                            <p>
-                                <label for="handle4">Voir détails 
-                                <span></span>
-                                <span></span>
-                                </label>
-                            </p>
+                            <input type="checkbox" name="Détails" id="handle4">
+
+                            <label for="handle4">Voir détails 
+                                <img src="./images/plus-solid.svg" alt="" class="Plus">
+                                <img src="./images/minus-solid.svg" alt="" class="Moins">
+                            </label>
+
                             <div class="content">
 
                                 <p>A partir d'un back fourni il fallait construire le front devant contenir 4 pages.</p>
@@ -240,13 +249,13 @@
                         <img src="./images/projet_6.jpg" alt="">
 
                         <div class="accordeon">
-                            <input type="checkbox" name="collapse" id="handle5">
-                            <p>
-                                <label for="handle5">Voir détails 
-                                <span></span>
-                                <span></span>
-                                </label>
-                            </p>
+                            <input type="checkbox" name="Détails" id="handle5">
+
+                            <label for="handle5">Voir détails 
+                                <img src="./images/plus-solid.svg" alt="" class="Plus">
+                                <img src="./images/minus-solid.svg" alt="" class="Moins">
+                            </label>
+
                             <div class="content">
 
                                 <p>A partir d'un front fourni construire le back-end et la DB. Implémenter le CRUD pour gérer, une inscription et une connexion d'un utilisateur. Ainsi, que l'ajout d'une sauce, sa modification ou sa suppresion. Mais également,
@@ -271,13 +280,13 @@
                         <img src="./images/projet_7.jpg" alt="">
 
                         <div class="accordeon">
-                            <input type="checkbox" name="collapse" id="handle6">
-                            <p>
-                                <label for="handle6">Voir détails 
-                                <span></span>
-                                <span></span>
-                                </label>
-                            </p>
+                            <input type="checkbox" name="Détails" id="handle6">
+
+                            <label for="handle6">Voir détails 
+                                <img src="./images/plus-solid.svg" alt="" class="Plus">
+                                <img src="./images/minus-solid.svg" alt="" class="Moins">
+                            </label>
+
                             <div class="content">
 
                                 <p>Création d'un réseau social d'entreprise (entreprise fictive). Création/suppression de compte utilisateur. Publication de texte/image ou les deux avec possibilité de suppression. Création d'un administrateur ayant tous
